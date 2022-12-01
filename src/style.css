@@ -1,1 +1,11 @@
-/* styles go here */
+.form-field {
+  display: block;
+}
+
+input {
+  margin: 0.4rem;
+}
+
+button {
+  margin: 0.4rem;
+}
