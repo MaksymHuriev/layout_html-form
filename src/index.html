@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
 
     <form method="post">
@@ -37,7 +36,7 @@
         </label>
 
         <label class="form-field">
-          How old are you?
+          How old are You?
           <input
             type="number"
             name="old"
@@ -93,7 +92,6 @@
               type="radio"
               name="love-cats"
               value="Y"
-              checked
             >
             Yes
           </label>
@@ -122,16 +120,17 @@
           What are your favorite brand of car?
 
           <select name="favorite-car" required multiple>
-            <option disabled selected>Choose a car</option>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
-            <option value="mercedes-benz">Mercedes-Benz</option>
+            <option value="lada">Lada</option>
           </select>
         </label>
 
         <label class="form-field">
           How do you rate our work?
-          <input type="range" name="rate-our-work">
+          <input type="range" name="rate-our-work"
+          value="0"
+          >
         </label>
       </fieldset>
 
@@ -142,10 +141,18 @@
           Comments:
           <textarea name="comments" rows="2" cols="10"></textarea>
         </label>
+
+        <label class="form-field">
+          Would you recommend us?
+
+          <select name="recomend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
       </fieldset>
 
       <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
     </form>
   </body>
 </html>
